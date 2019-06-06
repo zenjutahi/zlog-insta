@@ -62,3 +62,11 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
+gem 'bootstrap', '~> 4.0.0'
+gem 'jquery-rails'
+gem 'toastr-rails'
+gem 'omniauth', '~> 1.6'
+gem 'omniauth-twitter'
+gem 'carrierwave', '~> 1.0'
+gem 'cloudinary'
+gem 'figaro'
