@@ -26,7 +26,7 @@ class PostsController < ApplicationController
   end
   
   def show
-    
+    @photos = @post.photos
   end
   
   private
