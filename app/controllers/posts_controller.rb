@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   
   
   def index
-    @posts = Post.all.limit(10).includes(:photos)
+    @posts = Post.all.limit(10).includes(:photos, :user).order('created_at desc')
     @post = Post.new
   end
   
@@ -12,8 +12,8 @@ class PostsController < ApplicationController
     @post = current_user.posts.build(post_params)
     if @post.save
       if params[:images]
-        params[:images].each do |img|
-          @post.photos.create(image: params[:images][img])
+        params[:images].each do |_i, image|
+          @post.photos.create(image: image)
         end
       end
       
