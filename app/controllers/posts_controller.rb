@@ -32,7 +32,7 @@ class PostsController < ApplicationController
   private
   
   def find_post
-    @posts = Post.find_by id: params[:id]
+    @post = Post.find_by id: params[:id]
     
     return if @post
     flash[:danger] = "Post not exist!"
