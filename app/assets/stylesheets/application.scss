@@ -317,6 +317,12 @@ footer .nav-item {
   color: #262626;
 }
 
+.light-link-posts {
+  color: #999;
+  line-height: 20px;
+  font-size: 17px;
+}
+
 // Customize post views
 .post {
   .card-header {
@@ -378,13 +384,13 @@ footer .nav-item {
   background-position: -150px -353px;
 }
 
+.comment-list {
+  height: 310px;
+  overflow: auto;
+}
 
-
-
-
-
-
-
-
-
+.post-show-img {
+  background-color: #fafafa;
+  margin: -10px 0;
+}
 
