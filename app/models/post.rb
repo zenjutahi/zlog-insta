@@ -14,6 +14,6 @@ class Post < ApplicationRecord
   end
   
   def is_bookmarked user
-    Boookmark.find_by(user_id: user.id, post_id: id)
+    Bookmark.find_by(user_id: user.id, post_id: id)
   end
 end

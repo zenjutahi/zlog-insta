@@ -12,7 +12,7 @@ class BookmarksController < ApplicationController
   end
   
   def destroy
-    @bookmark = Boookmark.find(params[:id])
+    @bookmark = Bookmark.find(params[:id])
     @post =@bookmark.post
     if @bookmark.destroy
       respond_to :js
@@ -23,7 +23,7 @@ class BookmarksController < ApplicationController
   
   private
   def bookmark_params
-    params.required(:bookmark).permit :user_id, :post_id
+    params.permit :user_id, :post_id
   end
   
   
